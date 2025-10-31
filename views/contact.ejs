@@ -1,0 +1,20 @@
+<%- include('partials/header', { title: 'Contact | Shivang Portfolio' }) %>
+  <h1>Contact Me</h1>
+  <form method="post" action="/contact" class="row g-3">
+    <div class="col-md-6">
+      <label class="form-label">Name</label>
+      <input name="name" class="form-control" required />
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Email</label>
+      <input name="email" type="email" class="form-control" required />
+    </div>
+    <div class="col-12">
+      <label class="form-label">Message</label>
+      <textarea name="message" rows="4" class="form-control" required></textarea>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-success" type="submit">Send</button>
+    </div>
+  </form>
+<%- include('partials/footer') %>
