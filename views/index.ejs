@@ -1,34 +1,5 @@
-var express = require('express');
-var router = express.Router();
-
-/* Home */
-router.get('/', function (req, res) {
-  res.render('index', { title: 'Home | Shivang Portfolio' });
-});
-
-/* About */
-router.get('/about', function (req, res) {
-  res.render('about', { title: 'About | Shivang Portfolio' });
-});
-
-/* Projects */
-router.get('/projects', function (req, res) {
-  res.render('projects', { title: 'Projects | Shivang Portfolio' });
-});
-
-/* Contact (GET) */
-router.get('/contact', function (req, res) {
-  res.render('contact', { title: 'Contact | Shivang Portfolio', submitted: false });
-});
-
-/* Contact (POST) — simple echo back */
-router.post('/contact', function (req, res) {
-  const { name, email, message } = req.body || {};
-  res.render('contact', {
-    title: 'Contact | Shivang Portfolio',
-    submitted: true,
-    name, email, message
-  });
-});
-
-module.exports = router;
+<%- include('partials/header', { title: 'Home | Shivang Portfolio' }) %>
+  <h1 class="mb-3">Hi, I’m Shivang 👋</h1>
+  <p class="lead">Newbie web developer learning Express + EJS.</p>
+  <a class="btn btn-primary" href="/projects">See my Projects</a>
+<%- include('partials/footer') %>
