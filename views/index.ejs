@@ -1,36 +1,71 @@
 <%- include('partials/header', { title: 'Home | Shivang Portfolio', active: 'home' }) %>
 
-<section class="hero text-center mb-4">
-  <span class="badge badge-accent mb-2">INFR3120 – Web & Scripting Programming</span>
-  <h1 class="fw-bold mb-2">Personal Portfolio</h1>
-  <p class="lead mb-4">Responsive layout, smooth navigation, and sections for projects, skills, and contact.</p>
-  <div class="d-flex justify-content-center gap-2">
-    <a href="/projects" class="btn btn-brand text-white"><i class="fa-solid fa-code"></i> View Projects</a>
-    <a href="/about" class="btn btn-outline-light border"><i class="fa-solid fa-user"></i> About Me</a>
+<section class="hero text-center mb-5">
+  <h1 class="fw-bold mb-3">Welcome to My Portfolio</h1>
+  <p class="lead mb-4">
+    Hi, I’m <strong>Shivang</strong> — a student and beginner web developer exploring
+    how to build websites using <strong>Node.js</strong>, <strong>Express</strong>, and <strong>EJS</strong>.
+  </p>
+  <a href="/projects" class="btn btn-brand text-white">
+    <i class="fa-solid fa-code me-1"></i> View My Projects
+  </a>
+  <a href="/about" class="btn btn-outline-light ms-2">
+    <i class="fa-solid fa-user me-1"></i> Learn More
+  </a>
+</section>
+
+<section class="text-center mb-5">
+  <h2 class="mb-4">My Skills</h2>
+  <div class="row justify-content-center g-4">
+    <div class="col-6 col-md-3">
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <i class="fa-brands fa-html5 fa-2x text-danger mb-2"></i>
+          <h6>HTML</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <i class="fa-brands fa-css3-alt fa-2x text-primary mb-2"></i>
+          <h6>CSS</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <i class="fa-brands fa-js fa-2x text-warning mb-2"></i>
+          <h6>JavaScript</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <i class="fa-brands fa-node fa-2x text-success mb-2"></i>
+          <h6>Node.js</h6>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="row g-4">
-  <div class="col-md-4">
-    <div class="card h-100 shadow-sm"><div class="card-body">
-      <h5 class="card-title">Sections</h5>
-      <p class="mb-1">Home: Navigation to all areas.</p>
-      <p class="mb-1">About: Photo + short intro + video.</p>
-      <p class="mb-0">Projects & Contact pages included.</p>
-    </div></div>
-  </div>
-  <div class="col-md-4">
-    <div class="card h-100 shadow-sm"><div class="card-body">
-      <h5 class="card-title">Color Palette</h5>
-      <p class="mb-0"><code>#7c5cff</code> • <code>#ff6aa9</code> • <code>#0b1020</code> • <code>#e7e9ee</code></p>
-    </div></div>
-  </div>
-  <div class="col-md-4">
-    <div class="card h-100 shadow-sm"><div class="card-body">
-      <h5 class="card-title">Simple & Clean</h5>
-      <p class="mb-0">Beginner-friendly styling using Bootstrap utilities and small custom CSS.</p>
-    </div></div>
-  </div>
+<section class="text-center">
+  <h2 class="mb-3">About This Site</h2>
+  <p class="mb-4">
+    This is my <strong>Assignment 2 – Express Portfolio</strong>.
+    It’s built using <strong>Express.js</strong> for the backend,
+    <strong>EJS</strong> for templating, and <strong>Bootstrap</strong> for styling.
+  </p>
+  <p>
+    The purpose of this assignment is to learn routing, templating,
+    and modular design using partial views like <code>header.ejs</code> and <code>footer.ejs</code>.
+  </p>
+  <a href="/contact" class="btn btn-success mt-3">
+    <i class="fa-solid fa-paper-plane me-1"></i> Contact Me
+  </a>
 </section>
 
 <%- include('partials/footer') %>
