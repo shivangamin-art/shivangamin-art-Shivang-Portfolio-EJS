@@ -3,3 +3,27 @@
   <p>I’m a beginner web developer learning Node.js, Express, and EJS.</p>
   <p>This portfolio is part of my Assignment 2 submission.</p>
 <%- include('partials/footer') %>
+<%- include('partials/header', { title: 'About | Shivang Portfolio', active: 'about' }) %>
+
+<div class="row gy-4 align-items-start">
+  <div class="col-lg-7">
+    <h1 class="mb-3">About Me</h1>
+    <p class="lead">Student & Network Engineer learning Node.js, Express, and EJS.</p>
+    <p>This Assignment 2 version recreates my earlier HTML/CSS portfolio with a simple Express backend, EJS templates, Bootstrap utilities, and Font Awesome icons.</p>
+    <ul class="mt-3">
+      <li>Responsive layout and smooth navigation</li>
+      <li>Sections for showcasing projects, skills, and contact</li>
+      <li>Simple, readable styling</li>
+    </ul>
+  </div>
+  <div class="col-lg-5">
+    <img src="/assets/me.jpg" class="img-fluid rounded shadow-sm mb-3" alt="Me" onerror="this.style.display='none'"/>
+    <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm bg-dark">
+      <video controls poster="/assets/poster.jpg" onerror="this.style.display='none'">
+        <source src="/assets/intro.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
