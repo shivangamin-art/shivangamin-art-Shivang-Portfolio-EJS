@@ -1,26 +1,25 @@
-<%- include('partials/header', { title: 'Contact | Shivang Portfolio' }) %>
-  <h1>Contact Me</h1>
- <% if (submitted) { %>
-  <div class="alert alert-success mb-3">
-    Thanks <%= name %>! I’ll reply to <%= email %>.
-  </div>
+<%- include('partials/header', { title: 'Contact | Shivang Portfolio', active: 'contact' }) %>
+<h1>Contact Me</h1>
+
+<% if (submitted) { %>
+  <div class="alert alert-success mb-3">Thanks <%= name %>! I’ll reply to <%= email %>.</div>
 <% } %>
 
-  <form method="post" action="/contact" class="row g-3">
-    <div class="col-md-6">
-      <label class="form-label">Name</label>
-      <input name="name" class="form-control" required />
-    </div>
-    <div class="col-md-6">
-      <label class="form-label">Email</label>
-      <input name="email" type="email" class="form-control" required />
-    </div>
-    <div class="col-12">
-      <label class="form-label">Message</label>
-      <textarea name="message" rows="4" class="form-control" required></textarea>
-    </div>
-    <div class="col-12">
-      <button class="btn btn-success" type="submit">Send</button>
-    </div>
-  </form>
+<form method="post" action="/contact" class="row g-3">
+  <div class="col-md-6">
+    <label class="form-label">Name</label>
+    <input name="name" class="form-control" required />
+  </div>
+  <div class="col-md-6">
+    <label class="form-label">Email</label>
+    <input name="email" type="email" class="form-control" required />
+  </div>
+  <div class="col-12">
+    <label class="form-label">Message</label>
+    <textarea name="message" rows="4" class="form-control" required></textarea>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-success" type="submit"><i class="fa-solid fa-paper-plane"></i> Send</button>
+  </div>
+</form>
 <%- include('partials/footer') %>

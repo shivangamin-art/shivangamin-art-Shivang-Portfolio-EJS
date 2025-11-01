@@ -1,8 +1,38 @@
-<%- include('partials/header', { title: 'Projects | Shivang Portfolio' }) %>
-  <h1>Projects</h1>
-  <ul class="list-group">
-    <li class="list-group-item">Project 1 — Basic HTML portfolio</li>
-    <li class="list-group-item">Project 2 — JavaScript mini app</li>
-    <li class="list-group-item">Project 3 — Express EJS portfolio</li>
-  </ul>
+<%- include('partials/header', { title: 'Projects | Shivang Portfolio', active: 'projects' }) %>
+
+<h1 class="mb-4">Projects</h1>
+<div class="row g-4">
+  <div class="col-md-6 col-lg-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">Static Portfolio</h5>
+        <p class="card-text flex-grow-1">HTML & CSS site with responsive pages and smooth navigation.</p>
+        <a href="https://shivangamin-art.github.io/Shivang-Portfolio/" target="_blank" class="btn btn-outline-dark">
+          <i class="fa-brands fa-github"></i> Live / Code
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">Express + EJS Portfolio</h5>
+        <p class="card-text flex-grow-1">This assignment: routes, views, partials, Bootstrap/FA, and a contact form.</p>
+        <a href="https://github.com/shivangamin-art/shivangamin-art-Shivang-Portfolio-EJS" target="_blank" class="btn btn-outline-dark">
+          <i class="fa-brands fa-github"></i> Code
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">Mini JS App</h5>
+        <p class="card-text flex-grow-1">A small JavaScript exercise (placeholder). Replace with your real project.</p>
+        <a class="btn btn-outline-secondary disabled">Demo</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <%- include('partials/footer') %>

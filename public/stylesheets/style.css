@@ -1,8 +1,19 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+:root{
+  --primary:#7c5cff;      /* your brand purple */
+  --accent:#ff6aa9;       /* your brand pink   */
+  --bg:#0b1020;           /* dark background   */
+  --ink:#e7e9ee;          /* light text        */
+  --muted:#b7bfd6;        /* muted text        */
 }
 
-a {
-  color: #00B7FF;
+body{ background:#f8f9fb; }
+.hero {
+  background: linear-gradient(180deg, var(--bg) 0%, #131a33 100%);
+  color: var(--ink);
+  border-radius: .75rem;
+  padding: 3rem 1.25rem;
 }
+.btn-brand { background: var(--primary); border-color: var(--primary); }
+.btn-brand:hover{ filter: brightness(1.05); }
+.badge-accent{ background: var(--accent); }
+.navbar-brand{ letter-spacing:.5px }
