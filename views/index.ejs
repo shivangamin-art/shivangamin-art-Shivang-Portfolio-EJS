@@ -1,71 +1,83 @@
 <%- include('partials/header', { title: 'Home | Shivang Portfolio', active: 'home' }) %>
 
-<section class="hero text-center mb-5">
-  <h1 class="fw-bold mb-3">Welcome to My Portfolio</h1>
-  <p class="lead mb-4">
-    Hi, I’m <strong>Shivang</strong> — a student and beginner web developer exploring
-    how to build websites using <strong>Node.js</strong>, <strong>Express</strong>, and <strong>EJS</strong>.
-  </p>
-  <a href="/projects" class="btn btn-brand text-white">
-    <i class="fa-solid fa-code me-1"></i> View My Projects
-  </a>
-  <a href="/about" class="btn btn-outline-light ms-2">
-    <i class="fa-solid fa-user me-1"></i> Learn More
-  </a>
-</section>
-
+<!-- Hero -->
 <section class="text-center mb-5">
-  <h2 class="mb-4">My Skills</h2>
-  <div class="row justify-content-center g-4">
-    <div class="col-6 col-md-3">
-      <div class="card shadow-sm border-0">
-        <div class="card-body">
-          <i class="fa-brands fa-html5 fa-2x text-danger mb-2"></i>
-          <h6>HTML</h6>
-        </div>
-      </div>
-    </div>
-    <div class="col-6 col-md-3">
-      <div class="card shadow-sm border-0">
-        <div class="card-body">
-          <i class="fa-brands fa-css3-alt fa-2x text-primary mb-2"></i>
-          <h6>CSS</h6>
-        </div>
-      </div>
-    </div>
-    <div class="col-6 col-md-3">
-      <div class="card shadow-sm border-0">
-        <div class="card-body">
-          <i class="fa-brands fa-js fa-2x text-warning mb-2"></i>
-          <h6>JavaScript</h6>
-        </div>
-      </div>
-    </div>
-    <div class="col-6 col-md-3">
-      <div class="card shadow-sm border-0">
-        <div class="card-body">
-          <i class="fa-brands fa-node fa-2x text-success mb-2"></i>
-          <h6>Node.js</h6>
-        </div>
-      </div>
-    </div>
+  <h1 class="fw-bold">Welcome to My Portfolio</h1>
+  <p class="lead mt-3">
+    👋 Hi, I’m <strong>Shivang Amin</strong> — a Networking and IoT Engineer passionate about designing
+    secure, reliable, and scalable network systems.
+  </p>
+  <p>
+    Currently studying <strong>Network and IT Security</strong> at Ontario Tech University, I love combining research,
+    innovation, and practical engineering to connect devices, people, and data in smarter ways.
+  </p>
+  <p class="mb-4">🔗 Let’s build something meaningful together.</p>
+
+  <div class="d-flex gap-2 justify-content-center flex-wrap">
+    <a href="/projects" class="btn btn-primary">View My Projects</a>
+    <a href="/about" class="btn btn-outline-secondary">About Me</a>
+    <a href="/contact" class="btn btn-success">Contact Me</a>
   </div>
 </section>
 
-<section class="text-center">
-  <h2 class="mb-3">About This Site</h2>
-  <p class="mb-4">
-    This is my <strong>Assignment 2 – Express Portfolio</strong>.
-    It’s built using <strong>Express.js</strong> for the backend,
-    <strong>EJS</strong> for templating, and <strong>Bootstrap</strong> for styling.
-  </p>
-  <p>
-    The purpose of this assignment is to learn routing, templating,
-    and modular design using partial views like <code>header.ejs</code> and <code>footer.ejs</code>.
-  </p>
-  <a href="/contact" class="btn btn-success mt-3">
-    <i class="fa-solid fa-paper-plane me-1"></i> Contact Me
-  </a>
+<!-- 2x2 linked tiles -->
+<section class="home-tiles">
+  <div class="row g-4">
+    <!-- Skills Overview -> About -->
+    <div class="col-12 col-md-6">
+      <a class="tile d-block text-center" href="/about">
+        <h4 class="mb-2">Skills Overview</h4>
+        <hr class="tile-rule">
+        <div class="tile-text small text-muted mt-2">
+          <strong>💡 What I Do</strong><br>
+          Networking: Routing, Switching, VLANs, VPNs, Firewalls<br>
+          IoT & Automation: Industrial IoT, MQTT, Edge devices, Teltonika<br>
+          Security: Hardening, Pentesting, Secure configs<br>
+          Cloud & Tools: AWS, Linux, Docker, Bash, Wireshark
+        </div>
+      </a>
+    </div>
+
+    <!-- Featured Projects -> Projects -->
+    <div class="col-12 col-md-6">
+      <a class="tile d-block text-center" href="/projects">
+        <h4 class="mb-2">Featured Projects</h4>
+        <hr class="tile-rule">
+        <div class="tile-text small text-muted mt-2">
+          ⚙️ Industrial IoT Network Setup (Teltonika routers)<br>
+          ☁️ Cloud-Connected Sensor Dashboard (AWS IoT Core)<br>
+          🔐 Secure VPN Tunnel Configuration for remote access<br>
+          🖥️ <em>Explore more on my Projects page.</em>
+        </div>
+      </a>
+    </div>
+
+    <!-- Education & Experience -> About -->
+    <div class="col-12 col-md-6">
+      <a class="tile d-block text-center" href="/about">
+        <h4 class="mb-2">Education &amp; Experience</h4>
+        <hr class="tile-rule">
+        <div class="tile-text small text-muted mt-2">
+          🎓 Ontario Tech University — B. IT (Network & IT Security)<br>
+          💼 Networking & IoT Engineer — industrial network configuration & automation<br>
+          🔍 R&amp;D in connectivity, security, and edge systems
+        </div>
+      </a>
+    </div>
+
+    <!-- Contact -> Contact -->
+    <div class="col-12 col-md-6">
+      <a class="tile d-block text-center" href="/contact">
+        <h4 class="mb-2">Contact</h4>
+        <hr class="tile-rule">
+        <div class="tile-text small text-muted mt-2">
+          📩 Let’s connect!<br>
+          Reach me at <strong>shivang.amin@ontariotecu.net</strong><br>
+          🌐 <span class="text-decoration-underline">LinkedIn</span> • <span class="text-decoration-underline">GitHub</span> • Resume
+        </div>
+      </a>
+    </div>
+  </div>
 </section>
 
 <%- include('partials/footer') %>

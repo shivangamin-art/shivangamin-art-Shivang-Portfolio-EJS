@@ -1,42 +1,73 @@
 <%- include('partials/header', { title: 'About | Shivang Portfolio', active: 'about' }) %>
 
-<div class="row gy-4 align-items-start">
-  <div class="col-lg-7">
-    <h1 class="mb-3">About Me</h1>
+<div class="about-container border p-4 bg-white rounded">
+  <h1 class="text-center mb-5">About Me</h1>
 
-    <p class="lead">
-      Hello! I’m <strong>Shivang</strong> — a student and beginner web developer learning
-      <strong>Node.js</strong>, <strong>Express</strong>, and <strong>EJS</strong>.
-    </p>
-
+  <!-- Who I Am -->
+  <section class="mb-5">
+    <h4>1. Who I Am</h4>
     <p>
-      This website is my <em>Assignment 2: Express Portfolio</em>, built to recreate the
-      layout and content from my earlier HTML/CSS portfolio, but using an Express.js backend
-      with EJS templating and Bootstrap for styling.
+      Hi! I’m <strong>Shivang Amin</strong>, a Networking and IoT Engineer currently pursuing a degree in
+      <strong>Network and IT Security</strong> at Ontario Tech University.
+      I’m driven by curiosity — how networks communicate, how devices connect, and how security can make systems more trustworthy.
     </p>
+  </section>
 
+  <!-- What I Do -->
+  <section class="mb-5">
+    <h4>2. What I Do</h4>
     <p>
-      I enjoy learning how websites actually work — from designing simple responsive pages
-      to connecting routes and templates on the backend. My goal is to keep things
-      <strong>simple, clean, and beginner-friendly</strong>.
+      My work revolves around designing and maintaining secure, reliable network infrastructures,
+      especially within Industrial IoT environments.
+      I enjoy solving connectivity challenges — from configuring routers and switches
+      to securing communications between IoT devices and the cloud.
     </p>
+  </section>
 
-    <ul class="list-unstyled mt-3">
-      <li><i class="fa-solid fa-check text-success me-2"></i> Express + EJS for templating</li>
-      <li><i class="fa-solid fa-check text-success me-2"></i> Bootstrap & Font Awesome styling</li>
-      <li><i class="fa-solid fa-check text-success me-2"></i> Shared header/footer partials</li>
-      <li><i class="fa-solid fa-check text-success me-2"></i> Contact form with POST route</li>
+  <!-- My Technical Focus -->
+  <section class="mb-5">
+    <h4>3. My Technical Focus</h4>
+    <ul>
+      <li><strong>Networking:</strong> VLANs, VPNs, Routing, Switching, and Firewall management</li>
+      <li><strong>IoT Systems:</strong> Industrial automation, MQTT, data collection, Teltonika devices</li>
+      <li><strong>Security:</strong> Threat prevention, network hardening, and system monitoring</li>
+      <li><strong>Cloud & DevOps:</strong> AWS, Docker, Linux, CLI scripting</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="col-lg-5 text-center">
-    <img src="/images/mypic.jpg"
-         alt="Shivang photo"
-         class="img-fluid rounded shadow-sm mb-3"
-         onerror="this.style.display='none'" />
-    
-    <p class="text-muted small">“Learning by doing — one project at a time.”</p>
-  </div>
+  <!-- My Approach -->
+  <section class="mb-5">
+    <h4>4. My Approach</h4>
+    <p>
+      I believe in blending research and application — using deep technical understanding
+      to create practical, efficient, and secure solutions.
+      I approach every problem like a puzzle:
+      <em>analyze, design, test, secure, and optimize.</em>
+    </p>
+  </section>
+
+  <!-- Beyond Work -->
+  <section class="mb-5">
+    <h4>5. Beyond Work</h4>
+    <p>
+      When I’m not working on networks, you’ll find me:
+      <br>🎹 learning piano,
+      <br>📚 reading about technology and psychology, or
+      <br>🌍 exploring new ways to make tech more human-friendly.
+    </p>
+    <p>
+      I enjoy balancing the logical with the creative — both inspire innovation.
+    </p>
+  </section>
+
+  <!-- My Vision -->
+  <section>
+    <h4>6. My Vision</h4>
+    <p>
+      To bridge technology and humanity — creating connected systems that make life smarter, safer, and more sustainable.
+      I aspire to contribute to the next generation of secure IoT networks that empower industries and communities alike.
+    </p>
+  </section>
 </div>
 
 <%- include('partials/footer') %>

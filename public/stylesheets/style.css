@@ -1,19 +1,198 @@
-:root{
-  --primary:#7c5cff;      /* your brand purple */
-  --accent:#ff6aa9;       /* your brand pink   */
-  --bg:#0b1020;           /* dark background   */
-  --ink:#e7e9ee;          /* light text        */
-  --muted:#b7bfd6;        /* muted text        */
+/* ===============================
+   THEME COLORS (your palette)
+================================*/
+:root {
+  --primary: #7c5cff;   /* brand purple */
+  --accent:  #ff6aa9;   /* brand pink   */
+  --bg:      #0b1020;   /* dark bg used in hero */
+  --ink:     #e7e9ee;   /* light text for dark bg */
+  --muted:   #b7bfd6;   /* muted light text */
 }
 
-body{ background:#f8f9fb; }
+/* ===============================
+   BASE / TYPOGRAPHY
+================================*/
+html, body {
+  height: 100%;
+}
+body {
+  background: #f8f9fb;
+  color: #222;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+}
+h1, h2, h3, h4, h5 {
+  color: #111;
+  font-weight: 600;
+}
+
+/* ===============================
+   NAVBAR
+================================*/
+.navbar-brand {
+  letter-spacing: .5px;
+  font-weight: 700;
+}
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--accent) !important;
+  font-weight: 600;
+}
+
+/* ===============================
+   HERO (used on Home if desired)
+================================*/
 .hero {
   background: linear-gradient(180deg, var(--bg) 0%, #131a33 100%);
   color: var(--ink);
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   padding: 3rem 1.25rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
-.btn-brand { background: var(--primary); border-color: var(--primary); }
-.btn-brand:hover{ filter: brightness(1.05); }
-.badge-accent{ background: var(--accent); }
-.navbar-brand{ letter-spacing:.5px }
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  color: var(--muted);
+  max-width: 760px;
+  margin: 0 auto 1rem;
+}
+
+/* ===============================
+   BUTTONS
+================================*/
+.btn-brand {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+.btn-brand:hover {
+  filter: brightness(1.06);
+  color: #fff;
+}
+.btn-outline-secondary {
+  color: var(--bg);
+  border-color: var(--bg);
+}
+.btn-outline-secondary:hover {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+/* ===============================
+   FOOTER
+================================*/
+footer {
+  border-top: 1px solid #ddd;
+  background: #fdfdfd;
+  padding: 1.5rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+footer a {
+  color: var(--primary);
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   HOME PAGE — 2x2 TILES
+================================*/
+.home-tiles {
+  margin: 2rem auto 4rem;
+}
+.home-tiles .tile {
+  border: 3px solid #1c1c1c;
+  border-radius: 8px;
+  padding: 22px 18px;
+  background: #fff;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .08s ease, box-shadow .08s ease;
+  min-height: 210px;
+  display: block;
+}
+.home-tiles .tile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+}
+.home-tiles .tile-rule {
+  border: 0;
+  border-top: 2px dashed #777;
+  margin: 8px auto 0;
+  width: 80%;
+}
+.home-tiles .tile h4 {
+  font-weight: 600;
+  color: #111;
+}
+.home-tiles .tile-text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* ===============================
+   ABOUT PAGE — BOXED LAYOUT
+================================*/
+.about-container {
+  max-width: 980px;
+  margin: 3rem auto;
+  border: 3px solid #000;
+  background: #fff;
+  padding: 2rem 1.25rem;
+  border-radius: 4px; /* tiny rounding to soften corners */
+}
+.about-container h1 {
+  font-weight: 700;
+  color: #111;
+}
+.about-container h4 {
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+.about-container p,
+.about-container ul {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+.about-container ul {
+  list-style: disc;
+  padding-left: 2rem;
+}
+
+/* ===============================
+   CONTACT PAGE — SIMPLE FORM
+================================*/
+form .form-control {
+  border-radius: 0.5rem;
+}
+form button {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+form button:hover {
+  filter: brightness(1.05);
+}
+
+/* ===============================
+   UTILITIES / MISC
+================================*/
+.badge-accent { background: var(--accent); }
+.text-muted-ink { color: var(--muted); }
+
+/* ===============================
+   RESPONSIVE TWEAKS
+================================*/
+@media (max-width: 992px) {
+  .about-container { margin: 2rem 1rem; }
+}
+@media (max-width: 768px) {
+  .hero { padding: 2rem 1rem; }
+  .hero h1 { font-size: 1.75rem; }
+  .home-tiles .tile { min-height: auto; padding: 16px; }
+}
