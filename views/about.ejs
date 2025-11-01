@@ -1,28 +1,41 @@
-<%- include('partials/header', { title: 'About | Shivang Portfolio' }) %>
-  <h1>About Me</h1>
-  <p>I’m a beginner web developer learning Node.js, Express, and EJS.</p>
-  <p>This portfolio is part of my Assignment 2 submission.</p>
-<%- include('partials/footer') %>
 <%- include('partials/header', { title: 'About | Shivang Portfolio', active: 'about' }) %>
 
 <div class="row gy-4 align-items-start">
   <div class="col-lg-7">
     <h1 class="mb-3">About Me</h1>
-    <p class="lead">Student & Network Engineer learning Node.js, Express, and EJS.</p>
-    <p>This Assignment 2 version recreates my earlier HTML/CSS portfolio with a simple Express backend, EJS templates, Bootstrap utilities, and Font Awesome icons.</p>
-    <ul class="mt-3">
-      <li>Responsive layout and smooth navigation</li>
-      <li>Sections for showcasing projects, skills, and contact</li>
-      <li>Simple, readable styling</li>
+
+    <p class="lead">
+      Hello! I’m <strong>Shivang</strong> — a student and beginner web developer learning
+      <strong>Node.js</strong>, <strong>Express</strong>, and <strong>EJS</strong>.
+    </p>
+
+    <p>
+      This website is my <em>Assignment 2: Express Portfolio</em>, built to recreate the
+      layout and content from my earlier HTML/CSS portfolio, but using an Express.js backend
+      with EJS templating and Bootstrap for styling.
+    </p>
+
+    <p>
+      I enjoy learning how websites actually work — from designing simple responsive pages
+      to connecting routes and templates on the backend. My goal is to keep things
+      <strong>simple, clean, and beginner-friendly</strong>.
+    </p>
+
+    <ul class="list-unstyled mt-3">
+      <li><i class="fa-solid fa-check text-success me-2"></i> Express + EJS for templating</li>
+      <li><i class="fa-solid fa-check text-success me-2"></i> Bootstrap & Font Awesome styling</li>
+      <li><i class="fa-solid fa-check text-success me-2"></i> Shared header/footer partials</li>
+      <li><i class="fa-solid fa-check text-success me-2"></i> Contact form with POST route</li>
     </ul>
   </div>
-  <div class="col-lg-5">
-    <img src="/assets/me.jpg" class="img-fluid rounded shadow-sm mb-3" alt="Me" onerror="this.style.display='none'"/>
-    <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm bg-dark">
-      <video controls poster="/assets/poster.jpg" onerror="this.style.display='none'">
-        <source src="/assets/intro.mp4" type="video/mp4" />
-      </video>
-    </div>
+
+  <div class="col-lg-5 text-center">
+    <img src="/images/mypic.jpg"
+         alt="Shivang photo"
+         class="img-fluid rounded shadow-sm mb-3"
+         onerror="this.style.display='none'" />
+    
+    <p class="text-muted small">“Learning by doing — one project at a time.”</p>
   </div>
 </div>
 
