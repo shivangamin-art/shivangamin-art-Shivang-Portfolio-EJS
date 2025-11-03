@@ -51,7 +51,8 @@ expressjs-portfolio/
 │   ├── javascripts/
 │   └── images/
 │
-└── README.md```
+└── README.md
+```
 ---
 
 ## Features
