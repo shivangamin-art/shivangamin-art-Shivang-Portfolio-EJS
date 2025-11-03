@@ -1,38 +1,94 @@
 <%- include('partials/header', { title: 'Projects | Shivang Portfolio', active: 'projects' }) %>
 
+<!-- main heading -->
 <h1 class="mb-4">Projects</h1>
-<div class="row g-4">
-  <div class="col-md-6 col-lg-4">
-    <div class="card h-100 shadow-sm">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title">Static Portfolio</h5>
-        <p class="card-text flex-grow-1">HTML & CSS site with responsive pages and smooth navigation.</p>
-        <a href="https://shivangamin-art.github.io/Shivang-Portfolio/" target="_blank" class="btn btn-outline-dark">
-          <i class="fa-brands fa-github"></i> Live / Code
-        </a>
-      </div>
+
+<!-- grid layout for all project cards -->
+<div class="projects-grid">
+
+  <!-- static portfolio project — my first web foundation -->
+  <article class="project-card">
+    <h5 class="mb-3">Static Portfolio</h5>
+    <ul class="project-points">
+      <li><strong>Responsive Design</strong> — A static portfolio website built using pure HTML and CSS with a focus on clean and adaptive design.</li>
+      <li><strong>Smooth Navigation</strong> — Features intuitive page transitions and organized sections for a seamless browsing experience.</li>
+      <li><strong>Modern Aesthetic</strong> — Uses a minimal layout, flexible grids, and media queries for full responsiveness across devices.</li>
+      <li><strong>Technical Foundation</strong> — Demonstrates my grasp of semantic HTML, CSS structure, and responsive web development principles.</li>
+      <li><strong>Personal Goal</strong> — Serves as my foundational web project, showcasing growth in frontend styling and user-centered design.</li>
+    </ul>
+    <div class="btn-row">
+      <a class="btn btn-ghost" target="_blank"
+         href="https://shivangamin-art.github.io/Shivang-Portfolio/">
+        <i class="fa-solid fa-up-right-from-square me-1"></i> Live 
+      </a>
+      <a class="btn btn-ghost" target="_blank"
+         href="https://github.com/shivangamin-art/Shivang-Portfolio">
+        <i class="fa-solid fa-up-right-from-square me-1"></i> Code
+      </a>
     </div>
-  </div>
-  <div class="col-md-6 col-lg-4">
-    <div class="card h-100 shadow-sm">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title">Express + EJS Portfolio</h5>
-        <p class="card-text flex-grow-1">This assignment: routes, views, partials, Bootstrap/FA, and a contact form.</p>
-        <a href="https://github.com/shivangamin-art/shivangamin-art-Shivang-Portfolio-EJS" target="_blank" class="btn btn-outline-dark">
-          <i class="fa-brands fa-github"></i> Code
-        </a>
-      </div>
+  </article>
+
+  <!-- express + ejs portfolio — the current version of my website -->
+  <article class="project-card">
+    <h5 class="mb-3">Express + EJS Portfolio</h5>
+    <ul class="project-points">
+      <li><strong>Dynamic Web Application</strong> — A portfolio built using Node.js, Express.js, and EJS for server-side rendering and modular architecture.</li>
+      <li><strong>Reusable Components</strong> — Implements EJS partials and routing to efficiently manage headers, footers, and navigation menus.</li>
+      <li><strong>Enhanced UI</strong> — Utilizes Bootstrap and Font Awesome for styling consistency and responsive layouts.</li>
+      <li><strong>Interactive Features</strong> — Includes a working contact form that simulates user input handling and backend integration.</li>
+      <li><strong>Development Focus</strong> — Strengthened my skills in backend logic, web templating, and structured application design.</li>
+    </ul>
+    <div class="btn-row">
+      <a class="btn btn-ghost" target="_blank"
+         href="https://github.com/shivangamin-art/shivangamin-art-Shivang-Portfolio-EJS">
+        <i class="fa-brands fa-github me-1"></i> Code
+      </a>
     </div>
-  </div>
-  <div class="col-md-6 col-lg-4">
-    <div class="card h-100 shadow-sm">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title">Mini JS App</h5>
-        <p class="card-text flex-grow-1">A small JavaScript exercise (placeholder). Replace with your real project.</p>
-        <a class="btn btn-outline-secondary disabled">Demo</a>
-      </div>
+  </article>
+
+  <!-- algorithm visualizer — combining logic and UI -->
+  <article class="project-card">
+    <h5 class="mb-3">Algorithm Visualizer</h5>
+    <ul class="project-points">
+      <li><strong>Interactive Learning Tool</strong> — A web-based Algorithm and Data Structure Visualizer built using HTML, CSS, and JavaScript. </li>
+      <li><strong>Hands-On Visualization</strong> — Allows users to step through algorithms like sorting, searching, and graph traversal with real-time animations.</li>
+      <li><strong>Educational Focus</strong> — Helps students and engineers grasp abstract algorithmic concepts through visual learning.</li>
+      <li><strong>Technical Demonstration</strong> — Showcases my skills in frontend development, logic design, and problem-solving.</li>
+      <li><strong>Personal Connection</strong> — Reflects my passion for blending theory with practical application — the same mindset I apply in networking, IoT, and IT security projects.</li>
+    </ul>
+    <div class="btn-row">
+      <a class="btn btn-ghost" target="_blank"
+         href="https://shivang-amin01.github.io/algo-visualizer/">
+        <i class="fa-solid fa-up-right-from-square me-1"></i> Live 
+      </a>
+      <a class="btn btn-ghost" target="_blank"
+         href="https://github.com/Shivang-Amin01/algo-visualizer">
+        <i class="fa-solid fa-up-right-from-square me-1"></i> Code
+      </a>
     </div>
-  </div>
+  </article>
+
+  <!-- car rental app — applying OOP in a real-world scenario -->
+  <article class="project-card">
+    <h5 class="mb-3">Car Rental Application</h5>
+    <ul class="project-points">
+      <li><strong>Object-Oriented Project</strong> — A desktop-based Car Rental Application created using Object-Oriented Programming concepts.</li>
+      <li><strong>Enterprise Simulation</strong> — Mimics real-world car rental workflows including vehicle selection, booking, and customer management.</li>
+      <li><strong>Core OOP Implementation</strong> — Applies classes, inheritance, encapsulation, and polymorphism to structure the program efficiently.</li>
+      <li><strong>Feature-Rich Design</strong> — Includes vehicle inventory tracking, rental calculation, and user data management functions.</li>
+      <li><strong>Learning Outcome</strong> — Strengthened my understanding of software design, logical structuring, and application development.</li>
+    </ul>
+    <div class="btn-row">
+      <a class="btn btn-ghost" target="_blank"
+         href="https://shivang-amin01.github.io/OOP-Project/">
+        <i class="fa-solid fa-up-right-from-square me-1"></i> Live 
+      </a>
+      <a class="btn btn-ghost" target="_blank"
+         href="https://github.com/Shivang-Amin01/OOP-Project">
+        <i class="fa-solid fa-up-right-from-square me-1"></i> Code
+      </a>
+    </div>
+  </article>
 </div>
 
 <%- include('partials/footer') %>

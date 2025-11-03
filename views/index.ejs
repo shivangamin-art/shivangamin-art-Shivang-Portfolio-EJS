@@ -1,9 +1,9 @@
 <%- include('partials/header', { title: 'Home | Shivang Portfolio', active: 'home' }) %>
 
-<!-- Hero -->
-<section class="text-center mb-5">
+<!-- main intro section — quick hello and what I do -->
+<section class="text-start mb-5">
   <h1 class="fw-bold">Welcome to My Portfolio</h1>
-  <p class="lead mt-3">
+  <p class="lead mt-5">
     👋 Hi, I’m <strong>Shivang Amin</strong> — a Networking and IoT Engineer passionate about designing
     secure, reliable, and scalable network systems.
   </p>
@@ -13,70 +13,85 @@
   </p>
   <p class="mb-4">🔗 Let’s build something meaningful together.</p>
 
+  <!-- quick action buttons for navigating around -->
   <div class="d-flex gap-2 justify-content-center flex-wrap">
-    <a href="/projects" class="btn btn-primary">View My Projects</a>
+    <a href="/projects" class="btn btn-primary">My Projects</a>
     <a href="/about" class="btn btn-outline-secondary">About Me</a>
     <a href="/contact" class="btn btn-success">Contact Me</a>
   </div>
 </section>
 
-<!-- 2x2 linked tiles -->
+<!-- section with clickable tiles that summarize key areas -->
 <section class="home-tiles">
   <div class="row g-4">
-    <!-- Skills Overview -> About -->
+
+    <!-- my core skillset — gives a quick idea of what I work with -->
     <div class="col-12 col-md-6">
       <a class="tile d-block text-center" href="/about">
         <h4 class="mb-2">Skills Overview</h4>
         <hr class="tile-rule">
         <div class="tile-text small text-muted mt-2">
-          <strong>💡 What I Do</strong><br>
-          Networking: Routing, Switching, VLANs, VPNs, Firewalls<br>
-          IoT & Automation: Industrial IoT, MQTT, Edge devices, Teltonika<br>
-          Security: Hardening, Pentesting, Secure configs<br>
-          Cloud & Tools: AWS, Linux, Docker, Bash, Wireshark
+          <ul class="project-points text-start d-inline-block">
+            <li><strong>Networking Expertise</strong> — Skilled in configuring and managing routing, switching, VLANs, VPNs, and firewall systems to ensure secure and efficient connectivity.</li>
+            <li><strong>IoT & Automation</strong> — Experienced with Industrial IoT devices, Teltonika routers, MQTT protocols, and edge computing for smart automation solutions.</li>
+            <li><strong>Cybersecurity Focus</strong> — Proficient in network hardening, penetration testing, and implementing secure configurations to safeguard infrastructures.</li>
+            <li><strong>Cloud & DevOps Tools</strong> — Hands-on with AWS services, Docker containers, Linux administration, and Bash scripting for scalable, cloud-based deployments.</li>
+            <li><strong>Analytical Mindset</strong> — Strong problem-solving ability with a balance of technical precision and creative thinking to design reliable, secure systems.</li>
+          </ul>
         </div>
       </a>
     </div>
 
-    <!-- Featured Projects -> Projects -->
+    <!-- quick glimpse at a few projects worth checking out -->
     <div class="col-12 col-md-6">
       <a class="tile d-block text-center" href="/projects">
         <h4 class="mb-2">Featured Projects</h4>
         <hr class="tile-rule">
         <div class="tile-text small text-muted mt-2">
-          ⚙️ Industrial IoT Network Setup (Teltonika routers)<br>
-          ☁️ Cloud-Connected Sensor Dashboard (AWS IoT Core)<br>
-          🔐 Secure VPN Tunnel Configuration for remote access<br>
-          🖥️ <em>Explore more on my Projects page.</em>
+          <ul class="project-points text-start d-inline-block">
+            <li><strong>⚙️ Industrial IoT Network Setup</strong> — Designed and deployed secure, large-scale networks using <strong>Teltonika routers</strong> for industrial connectivity and real-time monitoring.</li>
+            <li><strong>☁️ Cloud-Connected Sensor Dashboard</strong> — Integrated IoT sensor data with <strong>AWS IoT Core</strong> to enable cloud-based visualization, analytics, and remote device control.</li>
+            <li><strong>🔐 Secure VPN Tunnel Configuration</strong> — Implemented encrypted VPN tunnels for safe and reliable remote access to critical systems across distributed sites.</li>
+            <li><strong>🧠 Research & Development</strong> — Focused on enhancing IoT communication reliability, data security, and network automation within industrial environments.</li>
+            <li><strong>🖥️ Explore More</strong> — View detailed write-ups and source code for each project on my Projects page.</li>
+          </ul>
         </div>
       </a>
     </div>
 
-    <!-- Education & Experience -> About -->
+    <!-- short summary of my education and hands-on experience -->
     <div class="col-12 col-md-6">
       <a class="tile d-block text-center" href="/about">
         <h4 class="mb-2">Education &amp; Experience</h4>
         <hr class="tile-rule">
         <div class="tile-text small text-muted mt-2">
-          🎓 Ontario Tech University — B. IT (Network & IT Security)<br>
-          💼 Networking & IoT Engineer — industrial network configuration & automation<br>
-          🔍 R&amp;D in connectivity, security, and edge systems
+          <ul class="project-points text-start d-inline-block">
+            <li><strong>🎓 Ontario Tech University</strong> — Pursuing a <strong>Bachelor of Information Technology</strong> in <strong>Network and IT Security</strong> with a focus on cloud computing and cybersecurity.</li>
+            <li><strong>💼 Networking & IoT Engineer</strong> — Hands-on experience in configuring industrial networks, automating systems, and integrating IoT solutions using Teltonika hardware.</li>
+            <li><strong>🧩 Technical Skills in Action</strong> — Applied networking, scripting, and problem-solving expertise in real-world deployments and academic projects.</li>
+            <li><strong>📚 Lifelong Learner</strong> — Continuously expanding my knowledge in cloud technologies, cybersecurity, and smart automation.</li>
+          </ul>
         </div>
       </a>
     </div>
 
-    <!-- Contact -> Contact -->
+    <!-- direct way to connect with me -->
     <div class="col-12 col-md-6">
-      <a class="tile d-block text-center" href="/contact">
+      <a class="tile d-block text-center" href="/contact" aria-label="Go to Contact page">
         <h4 class="mb-2">Contact</h4>
         <hr class="tile-rule">
         <div class="tile-text small text-muted mt-2">
-          📩 Let’s connect!<br>
-          Reach me at <strong>shivang.amin@ontariotecu.net</strong><br>
-          🌐 <span class="text-decoration-underline">LinkedIn</span> • <span class="text-decoration-underline">GitHub</span> • Resume
+          <ul class="project-points text-start d-inline-block">
+            <li><strong>📩 Let’s Connect!</strong> — I’m always open to discussions, collaborations, or project opportunities in networking, IoT, and cybersecurity.</li>
+            <li><strong>💬 Email</strong> — Reach me directly at shivang.amin@ontariotecu.net for professional inquiries.</li>
+            <li><strong>🌐 LinkedIn</strong> — linkedin.com/in/shivangamin — Let’s network and share insights.</li>
+            <li><strong>💻 GitHub</strong> — github.com/Shivang-Amin01 — Explore my open-source projects and repositories.</li>
+            <li><strong>📞 Connect Directly</strong> — Want to reach out? - Click Me!</li>
+          </ul>
         </div>
       </a>
     </div>
+
   </div>
 </section>
 

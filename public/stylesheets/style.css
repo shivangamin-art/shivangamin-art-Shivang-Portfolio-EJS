@@ -1,20 +1,14 @@
-/* ===============================
-   THEME COLORS (your palette)
-================================*/
+/* colors I use everywhere on the site */
 :root {
-  --primary: #7c5cff;   /* brand purple */
-  --accent:  #ff6aa9;   /* brand pink   */
-  --bg:      #0b1020;   /* dark bg used in hero */
-  --ink:     #e7e9ee;   /* light text for dark bg */
-  --muted:   #b7bfd6;   /* muted light text */
+  --primary: #7c5cff;
+  --accent:  #ff6aa9;
+  --bg:      #0b1020;
+  --ink:     #e7e9ee;
+  --muted:   #b7bfd6;
 }
 
-/* ===============================
-   BASE / TYPOGRAPHY
-================================*/
-html, body {
-  height: 100%;
-}
+/* basic text and layout setup */
+html, body { height: 100%; }
 body {
   background: #f8f9fb;
   color: #222;
@@ -22,68 +16,16 @@ body {
   line-height: 1.6;
   margin: 0;
 }
-h1, h2, h3, h4, h5 {
-  color: #111;
-  font-weight: 600;
-}
+h1, h2, h3, h4, h5 { color: #111; font-weight: 600; }
 
-/* ===============================
-   NAVBAR
-================================*/
-.navbar-brand {
-  letter-spacing: .5px;
-  font-weight: 700;
-}
+/* navbar styling — brand look + highlight active link */
+.navbar-brand { letter-spacing: .5px; font-weight: 700; }
 .navbar-dark .navbar-nav .nav-link.active {
   color: var(--accent) !important;
   font-weight: 600;
 }
 
-/* ===============================
-   HERO (used on Home if desired)
-================================*/
-.hero {
-  background: linear-gradient(180deg, var(--bg) 0%, #131a33 100%);
-  color: var(--ink);
-  border-radius: 0.75rem;
-  padding: 3rem 1.25rem;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-.hero h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-.hero p {
-  color: var(--muted);
-  max-width: 760px;
-  margin: 0 auto 1rem;
-}
-
-/* ===============================
-   BUTTONS
-================================*/
-.btn-brand {
-  background: var(--primary);
-  border-color: var(--primary);
-  color: #fff;
-}
-.btn-brand:hover {
-  filter: brightness(1.06);
-  color: #fff;
-}
-.btn-outline-secondary {
-  color: var(--bg);
-  border-color: var(--bg);
-}
-.btn-outline-secondary:hover {
-  background: var(--bg);
-  color: var(--ink);
-}
-
-/* ===============================
-   FOOTER
-================================*/
+/* footer design */
 footer {
   border-top: 1px solid #ddd;
   background: #fdfdfd;
@@ -91,26 +33,15 @@ footer {
   font-size: 0.95rem;
   color: #555;
 }
-footer a {
-  color: var(--primary);
-  text-decoration: none;
-}
-footer a:hover {
-  text-decoration: underline;
-}
+footer a { color: var(--primary); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
 
-/* ===============================
-   HOME PAGE — 2x2 TILES
-================================*/
-.home-tiles {
-  margin: 2rem auto 4rem;
-}
+/* tiles on the home page */
 .home-tiles .tile {
   border: 3px solid #1c1c1c;
   border-radius: 8px;
   padding: 22px 18px;
   background: #fff;
-  text-decoration: none;
   color: inherit;
   transition: transform .08s ease, box-shadow .08s ease;
   min-height: 210px;
@@ -126,73 +57,119 @@ footer a:hover {
   margin: 8px auto 0;
   width: 80%;
 }
-.home-tiles .tile h4 {
-  font-weight: 600;
-  color: #111;
-}
-.home-tiles .tile-text {
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
+.home-tiles .tile h4 { font-weight: 600; color: #111; }
+.home-tiles .tile-text { font-size: 0.9rem; line-height: 1.4; }
 
-/* ===============================
-   ABOUT PAGE — BOXED LAYOUT
-================================*/
+/* about page container */
 .about-container {
-  max-width: 980px;
+  max-width: 110000px;
   margin: 3rem auto;
   border: 3px solid #000;
   background: #fff;
   padding: 2rem 1.25rem;
-  border-radius: 4px; /* tiny rounding to soften corners */
+  border-radius: 4px;
 }
-.about-container h1 {
-  font-weight: 700;
-  color: #111;
-}
-.about-container h4 {
-  font-weight: 600;
-  margin-bottom: .5rem;
-}
+.about-container h1 { font-weight: 700; color: #111; }
+.about-container h4 { font-weight: 600; margin-bottom: .5rem; }
 .about-container p,
 .about-container ul {
   font-size: 1rem;
   color: #222;
   margin-bottom: 1rem;
 }
-.about-container ul {
-  list-style: disc;
-  padding-left: 2rem;
-}
+.about-container ul { list-style: disc; padding-left: 2rem; }
 
-/* ===============================
-   CONTACT PAGE — SIMPLE FORM
-================================*/
-form .form-control {
-  border-radius: 0.5rem;
-}
+/* contact form — keeping it simple */
+form .form-control { border-radius: 0.5rem; }
 form button {
   background: var(--primary);
   border-color: var(--primary);
 }
-form button:hover {
-  filter: brightness(1.05);
+form button:hover { filter: brightness(1.05); }
+
+/* projects page — grid layout, cards, and buttons */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.25rem 1.5rem;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 768px) {
+  .projects-grid { grid-template-columns: 1fr; }
+}
+.project-card {
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  border-radius: 12px;
+  padding: 18px 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  transition: transform .08s ease, box-shadow .12s ease;
+}
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.08);
+}
+.project-card h5 {
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.6rem; /* small gap below heading */
+}
+.project-card .text-muted { color: #666 !important; }
+
+.btn-row { display: flex; gap: .5rem; }
+.btn-ghost {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 100%;
+  padding: .55rem .9rem;
+  border: 2px solid #2b2b2b;
+  background: #fff;
+  color: #2b2b2b;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.btn-ghost:hover { background: #2b2b2b; color: #fff; text-decoration: none; }
+.btn-ghost:disabled {
+  opacity: .55; background: #fafafa; border-color: #cfcfcf; color: #9a9a9a;
 }
 
-/* ===============================
-   UTILITIES / MISC
-================================*/
-.badge-accent { background: var(--accent); }
-.text-muted-ink { color: var(--muted); }
+/* bullet list style for project details */
+.project-points {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: #444;
+  line-height: 1.55;
+}
+.project-points li { margin-bottom: .4rem; }
+.project-points strong { color: #111; }
 
-/* ===============================
-   RESPONSIVE TWEAKS
-================================*/
+/* about box spacing on tablets */
 @media (max-width: 992px) {
   .about-container { margin: 2rem 1rem; }
 }
-@media (max-width: 768px) {
-  .hero { padding: 2rem 1rem; }
-  .hero h1 { font-size: 1.75rem; }
-  .home-tiles .tile { min-height: auto; padding: 16px; }
+
+/* custom buttons on home page */
+.btn-myprojects {
+  background-color: #f8f8f8;
+  color: white;
+  border: none;
+}
+.btn-myprojects:hover {
+  background-color: #ffffff;
+}
+
+.btn-about {
+  background-color: #fffefe;
+  color: white;
+}
+.btn-about:hover {
+  background-color: #ffffff;
+}
+
+.btn-contact {
+  background-color: #ffffff;
+  color: white;
+}
+.btn-contact:hover {
+  background-color: #ffffff;
 }
