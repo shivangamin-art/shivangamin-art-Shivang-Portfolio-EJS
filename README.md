@@ -18,8 +18,8 @@ The website contains four different pages rendered using Express routes and EJS 
 
 ## Deployment
 
-- Live Site:https://shivang-portfolio.onrender.com
-- Repository: https://github.com/shivangamin-art/expressjs-portfolio
+- Live Site:https://shivang-portfolio-ejs.onrender.com/
+- Repository: https://github.com/shivangamin-art/shivangamin-art-Shivang-Portfolio-EJS
 
 ---
 
