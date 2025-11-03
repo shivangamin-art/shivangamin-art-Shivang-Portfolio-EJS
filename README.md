@@ -25,6 +25,7 @@ The website contains four different pages rendered using Express routes and EJS 
 
 ## File Structure
 
+'''
 expressjs-portfolio/
 │
 ├── app.js
@@ -50,7 +51,7 @@ expressjs-portfolio/
 │   ├── javascripts/
 │   └── images/
 │
-└── README.md
+└── README.md'''
 ---
 
 ## Features
